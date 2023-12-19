@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit&family=Rajdhani:wght@500&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <title>Shop</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="index.html" class="header-title">
+            LOT<span class="header-title-second">US</span>
+          </a>
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-text" href="index.html">Main</a>
+            </li>
+            <li class="header-item">
+              <a class="header-text" href="shop.html">Shop</a>
+            </li>
+            <li class="header-item">
+              <a class="header-text" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h3 class="hero-text">
+            Our Products<svg
+              class="hero-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              height="23"
+              width="19"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M350 334.5c3.8 8.8 2 19-4.6 26l-136 144c-4.5 4.8-10.8 7.5-17.4 7.5s-12.9-2.7-17.4-7.5l-136-144c-6.6-7-8.4-17.2-4.6-26s12.5-14.5 22-14.5h88l0-192c0-17.7-14.3-32-32-32H32C14.3 96 0 81.7 0 64V32C0 14.3 14.3 0 32 0l80 0c70.7 0 128 57.3 128 128l0 192h88c9.6 0 18.2 5.7 22 14.5z"
+              />
+            </svg>
+          </h3>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <ul class="products-list">
+            <li data-aos="fade-right" class="products-item">
+              <img src="./img/LITE.png" alt="LITE" />
+              <h3 class="products-text">Pack "LITE"</h3>
+              <a class="products-link" href="#" onclick="openModal('myModal1'); return false;">
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
+            <li data-aos="fade-down" class="products-item">
+              <img src="./img/pro.png" alt="LITE" />
+              <h3 class="products-text">Pack "PRO"</h3>
+              <a class="products-link" href="#" onclick="openModal('myModal2'); return false;">
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
+            <li data-aos="fade-left" class="products-item">
+              <img src="./img/HARDCORE.png" alt="LITE" />
+              <h3 class="products-text">Pack "HARDCORE"</h3>
+              <a class="products-link" href="#" onclick="openModal('myModal3'); return false;">
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
+            <!-- <ul class="products-list2"> -->
+              <li class="products-item">
+                <img src="./img/RP.png" alt="LITE" />
+                <h3 class="products-text">LVL</h3>
+                <a class="products-link" href="#" onclick="openModal('myModal4'); return false;">
+                  <p class="products-paragraph">Learn more...</p>
+                </a>
+              </li>
+              <li class="products-item">
+                <img src="./img/MONEY.png" alt="LITE" />
+                <h3 class="products-text">Money</h3>
+                <a class="products-link" href="#" onclick="openModal('myModal5'); return false;">
+                  <p class="products-paragraph">Learn more...</p>
+                </a>
+              </li>
+              <li class="products-item">
+                <img src="./img/UPGRADES.png" alt="LITE" />
+                <h3 class="products-text">Upgrades</h3>
+                <a class="products-link" href="#" onclick="openModal('myModal6'); return false;">
+                  <p class="products-paragraph">Learn more...</p>
+                </a>
+              </li>
+            <!-- </ul> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('myModal1')">&times;</span>
+          <img class="modal-img" src="./img/LITE.png" alt="lite">
+          <p class="modal-paragraph">Pack "LITE"</p>
+          <div id="exchange-rate1">Загрузка данных...</div>
+        </div>
+      </div>
+    
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('myModal2')">&times;</span>
+          <p class="modal-paragraph">Pack "PRO"</p>
+          <div id="exchange-rate2">Загрузка данных...</div>
+        </div>
+      </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
