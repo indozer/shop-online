@@ -199,12 +199,12 @@ body {
   }
 
   .products-list {
-    flex-wrap: wrap; /* Display items in a single row */
-    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
   }
 
   .products-item {
-    flex-basis: calc(100% - 20px); /* Adjust spacing as needed */
+    flex-basis: calc(100% - 20px); 
     width: auto;
     height: auto;
     margin-bottom: 20px;
