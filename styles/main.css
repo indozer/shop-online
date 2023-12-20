@@ -12,9 +12,6 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -249,12 +246,10 @@ svg {
 
   .hero-button {
     margin-bottom: 20px;
-    z-index: 2;
   }
 
   .button-content {
     margin-top: 20px;
-    z-index: 1;
   }
 
   .hero-text {
@@ -321,10 +316,5 @@ svg {
     margin: auto;
     width: 190px;
     height: 60px;
-    z-index: 1;
-  }
-
-  .header{
-    z-index: 9999;
   }
 }
