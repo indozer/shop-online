@@ -249,6 +249,7 @@ svg {
 
   .hero-button {
     margin-bottom: 20px;
+    z-index: 1;
   }
 
   .button-content {
@@ -322,6 +323,6 @@ svg {
   }
 
   .header{
-    z-index:9999;
+    z-index: 9999;
   }
 }
