@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/shop.css" />
     <title>Shop</title>
   </head>
@@ -29,9 +29,6 @@
             </li>
             <li class="header-item">
               <a class="header-text" href="shop.html">Shop</a>
-            </li>
-            <li class="header-item">
-              <a class="header-text" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -63,46 +60,69 @@
             <li data-aos="fade-right" class="products-item">
               <img src="./img/LITE.png" alt="LITE" />
               <h3 class="products-text">Pack "LITE"</h3>
-              <a class="products-link" href="#" onclick="openModal('myModal1'); return false;">
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal1'); return false;"
+              >
                 <p class="products-paragraph">Learn more...</p>
               </a>
             </li>
             <li data-aos="fade-down" class="products-item">
               <img src="./img/pro.png" alt="LITE" />
               <h3 class="products-text">Pack "PRO"</h3>
-              <a class="products-link" href="#" onclick="openModal('myModal2'); return false;">
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal2'); return false;"
+              >
                 <p class="products-paragraph">Learn more...</p>
               </a>
             </li>
             <li data-aos="fade-left" class="products-item">
               <img src="./img/HARDCORE.png" alt="LITE" />
               <h3 class="products-text">Pack "HARDCORE"</h3>
-              <a class="products-link" href="#" onclick="openModal('myModal3'); return false;">
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal3'); return false;"
+              >
                 <p class="products-paragraph">Learn more...</p>
               </a>
             </li>
-            <!-- <ul class="products-list2"> -->
-              <li class="products-item">
-                <img src="./img/RP.png" alt="LITE" />
-                <h3 class="products-text">LVL</h3>
-                <a class="products-link" href="#" onclick="openModal('myModal4'); return false;">
-                  <p class="products-paragraph">Learn more...</p>
-                </a>
-              </li>
-              <li class="products-item">
-                <img src="./img/MONEY.png" alt="LITE" />
-                <h3 class="products-text">Money</h3>
-                <a class="products-link" href="#" onclick="openModal('myModal5'); return false;">
-                  <p class="products-paragraph">Learn more...</p>
-                </a>
-              </li>
-              <li class="products-item">
-                <img src="./img/UPGRADES.png" alt="LITE" />
-                <h3 class="products-text">Upgrades</h3>
-                <a class="products-link" href="#" onclick="openModal('myModal6'); return false;">
-                  <p class="products-paragraph">Learn more...</p>
-                </a>
-              </li>
+            <li class="products-item">
+              <img src="./img/RP.png" alt="LITE" />
+              <h3 class="products-text">LVL</h3>
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal4'); return false;"
+              >
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
+            <li class="products-item">
+              <img src="./img/MONEY.png" alt="LITE" />
+              <h3 class="products-text">Money</h3>
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal5'); return false;"
+              >
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
+            <li class="products-item">
+              <img src="./img/UPGRADES.png" alt="LITE" />
+              <h3 class="products-text">Upgrades</h3>
+              <a
+                class="products-link"
+                href="#"
+                onclick="openModal('myModal6'); return false;"
+              >
+                <p class="products-paragraph">Learn more...</p>
+              </a>
+            </li>
             <!-- </ul> -->
           </ul>
         </div>
@@ -110,21 +130,130 @@
     </main>
 
     <div id="myModal1" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('myModal1')">&times;</span>
-          <img class="modal-img" src="./img/LITE.png" alt="lite">
-          <p class="modal-paragraph">Pack "LITE"</p>
-          <div id="exchange-rate1">Загрузка данных...</div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+        <img class="modal-img" src="./img/LITE.png" alt="lite" />
+        <p class="modal-paragraph">Pack "LITE" (Only for PC version)</p>
+        <p class="modal-price">1.6 USD / 100 RUB / 60 UAH</p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button class="modal-button">BUY</button>
+        </a>
+        <div class="modal-description">
+          <p class="description-text">The light package includes:</p>
+          <p class="description-takes">
+            Money: 1$ - 50.000.000$<br />LVL: 1LVL - 50LVL
+          </p>
         </div>
       </div>
-    
-      <div id="myModal2" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('myModal2')">&times;</span>
-          <p class="modal-paragraph">Pack "PRO"</p>
-          <div id="exchange-rate2">Загрузка данных...</div>
+    </div>
+
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <img class="modal-img" src="./img/pro.png" alt="lite" />
+        <p class="modal-paragraph">Pack "PRO" (Only for PC version)</p>
+        <p class="modal-price">3.2 USD / 300 RUB / 120 UAH</p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button class="modal-button">BUY</button>
+        </a>
+        <div class="modal-description">
+          <p class="description-text">The light package includes:</p>
+          <p class="description-takes">
+            Money: 1$ - 250.000.000$<br />LVL: 1LVL - 400LVL
+          </p>
         </div>
       </div>
+    </div>
+
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+        <img class="modal-img" src="./img/HARDCORE.png" alt="lite" />
+        <p class="modal-paragraph">Pack "Hardcore" (Only for PC version)</p>
+        <p class="modal-price">7.6 USD / 700 RUB / 300 UAH</p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button class="modal-button">BUY</button>
+        </a>
+        <div class="modal-descriptionh">
+          <p class="description-text">The light package includes:</p>
+          <p class="description-takes">
+            Money: 1 $ - 2.000.000.000 $<br />LVL: 1 LVL - 8.000 LVL<br />Opening
+            tuning<br />
+            Unlocking Abilities<br />Opening all guns<br />Opening a car from a
+            robbery<br />
+            Opening all tattoos<br />Opening of all exclusive clothes
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+        <img class="modal-img" src="./img/RP.png" alt="lite" />
+        <p class="modal-paragraph">RP (Only for PC version)</p>
+        <p class="modal-price">Price -></p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button class="modal-button">BUY</button>
+        </a>
+        <div class="modal-descriptionrp">
+          <p class="description-text"></p>
+          <p class="description-takes">
+            1-100 LVL - 50 RUB / 20 UAH / 0.55 USD<br />
+            1-300 LVL - 100 RUB / 41 UAH / 1.1 USD<br />
+            1-500 LVL - 150 RUB / 61 UAH / 1.65USD<br />
+            1-1000 LVL - 200 RUB / 82 UAH / 2.2 USD<br />
+            1-5000 LVL -350 RUB / 143 UAH / 3.85 USD<br />
+            1-8000 LVL - 450 RUB / 184 UAH / 4.95 USD<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+        <img class="modal-img" src="./img/MONEY.png" alt="lite" />
+        <p class="modal-paragraph">Money (Only for PC version)</p>
+        <p class="modal-price">Price -></p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button class="modal-button">BUY</button>
+        </a>
+        <div class="modal-descriptionmn">
+          <p class="description-text"></p>
+          <p class="description-takes">
+            10.000.000$ - 50 RUB / 20 UAH / 0.6 USD<br>
+            50.000.000$ - 100 RUB / 41 UAH / 1.1USD<br> 
+            100.000.000$ - 150 RUB / 61 UAH / 1.65 USD<br> 
+            500.000.000$ - 250 RUB / 102 UAH / 2.75 USD<br> 
+            1.000.000.000$ - 350 RUB / 143 UAH / 3.85 USD<br>
+            2.000.000.000$ - 500 RUB / 205 UAH/ 5.5 USD<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal6')">&times;</span>
+        <img class="modal-img" src="./img/UPGRADES.png" alt="lite" />
+        <p class="modal-paragraph">Upgrades (Only for PC version)</p>
+        <p class="modal-price">1.6 USD / 100 RUB / 60 UAH</p>
+        <a target="_blank" class="modal-link" href="https://t.me/indo3er">
+          <button type="button" class="modal-button">BUY</button>
+        </a>
+        <div class="modal-descriptionup">
+          <p class="description-text">The light package includes:</p>
+          <p class="description-takes">
+            Opening
+            tuning<br />
+            Unlocking Abilities<br />Opening all guns<br />Opening a car from a
+            robbery<br />
+            Opening all tattoos<br />Opening of all exclusive clothes
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

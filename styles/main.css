@@ -1,26 +1,8 @@
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.774)),
     url(/img/body-bg.jpg);
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(0, 0, 0) orangergb(255, 255, 255);
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 25px;
-}
-
-*::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
-  border: 3px solid rgb(116, 116, 116);
+    margin: 0; /* Убираем внешние отступы у body */
+    height: 100vh;
 }
 
 .container {
@@ -39,6 +21,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: solid 1px #444444;
+  background-color: #000;
 }
 
 .header-nav {
@@ -81,6 +64,7 @@ body {
   font-size: 24px;
   transition: color 0.5s ease-out;
 }
+
 
 .header-text:hover,
 .header-text:focus {
@@ -205,6 +189,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
 
 .advantage-item {
@@ -223,4 +212,114 @@ body {
 svg {
   fill: #ffffff;
   margin-right: 5px;
+}
+
+.advantage-terms {
+  margin-top: 20px;
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(138, 138, 138);
+  line-height: 1.41;
+  font-weight: 400;
+  font-size: 28px;
+  /* margin-left: 500px; */
+  margin-left: 50%;
+  margin-right: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%; 
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header-nav {
+    margin-right: 0; 
+    gap: 50px;
+  }
+
+  .header-list {
+    gap: 20px; 
+  }
+
+  .hero {
+    margin-top: 100px; 
+  }
+
+  .hero-button {
+    margin-bottom: 20px;
+  }
+
+  .button-content {
+    margin-top: 20px; 
+  }
+
+  .hero-text {
+    font-size: 18px; 
+  }
+
+  .advantage {
+    margin-top: 150px; 
+  }
+
+  .advantage-title {
+    font-size: 28px; 
+  }
+
+  .advantage-list {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+
+  .advantage-item {
+    width: 100%; 
+    width: 100%; 
+    padding: 15px; 
+    box-sizing: border-box; 
+  }
+
+  .advantage-terms {
+    font-family: "Fjalla One", sans-serif;
+    color: rgb(138, 138, 138);
+    line-height: 1.41;
+    font-weight: 400;
+    font-size: 28px;
+    margin-left: 35%;
+  }
+  
+  .advantage-text {
+    font-size: 24px; 
+  }
+
+  .advantage-p {
+    font-size: 12px; 
+  }
+
+  .hero {
+    margin-top: 300px; 
+  }
+  
+  .hero-text {
+    font-size: 36px; 
+  }
+  
+  .hero-button {
+    width: 180px; 
+    height: 50px; 
+    font-size: 18px; 
+    margin-top: 20px;
+  }
+
+  .hero-button::before {
+    margin: auto;
+    width: 190px;
+    height: 60px;
+  }
 }

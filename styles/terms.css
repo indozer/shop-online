@@ -1,0 +1,99 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.774)),
+    url(/img/body-bg.jpg);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) orangergb(255, 255, 255);
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 25px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: 3px solid rgb(116, 116, 116);
+}
+
+.container {
+  width: 1130px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #444444;
+  background-color: black;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 150px;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  justify-content: center;
+}
+
+.header-title {
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.41;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.header-title-second {
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(94, 94, 94);
+  line-height: 1.41;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.header-text {
+  font-family: "Rajdhani", sans-serif;
+  color: #ffffff;
+  line-height: 1.41;
+  font-weight: 400;
+  font-size: 24px;
+  transition: color 0.5s ease-out;
+}
+
+.header-text:hover,
+.header-text:focus {
+  color: rgb(87, 87, 87);
+}
+
+.terms {
+  margin-top: 200px;
+}
