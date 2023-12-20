@@ -91,4 +91,9 @@
       website and remains valid until it is changed or terminated.*
     </h2>
   </body>
+  <script>
+    if (window.location.pathname.endsWith('/terms.html')) {
+        window.history.replaceState({}, document.title, window.location.pathname.replace('/shop.html', '/'));
+    }
+</script>
 </html>
