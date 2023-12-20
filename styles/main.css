@@ -249,7 +249,7 @@ svg {
 
   .hero-button {
     margin-bottom: 20px;
-    z-index: 1;
+    z-index: 9998;
   }
 
   .button-content {
