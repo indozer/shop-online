@@ -12,9 +12,6 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -252,7 +249,7 @@ svg {
   }
 
   .button-content {
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 
   .hero-text {
